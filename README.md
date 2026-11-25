@@ -1,5 +1,7 @@
 # Morley Mower Centre: website redesign mockup
 
+> **Pitch points below were written when the site was built and most haven't been rechecked.** Phones get a separate Wix version, so "wider than the screen" is **not confirmed**. Confirmed 25 Nov 2026: one of two call links is badly formed (`tel:61 0893755600`), and the footer says 2018. Check each one on the live site, on a real phone, before saying it.
+
 Rebuild of http://morleymowercentre.com.au (Wix site). Plain HTML/CSS/JS, no build step. Open `index.html` in a browser.
 
 Business details (taken from the live site): 1/26 Rudloc Rd, Morley WA 6062 · (08) 9375 5600 · sales@morleymowercentre.com.au · Mon–Fri 8:00am–5:00pm, Sat 8:00am–2:00pm · facebook.com/MorleyMowerCentre
