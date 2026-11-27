@@ -82,16 +82,26 @@
             <a class="btn btn--dark" href="https://www.facebook.com/MorleyMowerCentre/" target="_blank" rel="noopener">Find us on Facebook</a>
           </div>
         </div>
-        <form class="form card" data-mailto="sales@morleymowercentre.com.au" data-subject="Website enquiry">
-          <h3>Send us a message</h3>
+        <form class="form card" id="enquire" data-mailto="sales@morleymowercentre.com.au" data-subject="Website enquiry">
+          <h3 id="enquire-title">Send us a message</h3>
           <div class="form-row">
             <div><label for="cn">Name *</label><input id="cn" name="name" required autocomplete="name"></div>
             <div><label for="cp">Phone</label><input id="cp" name="phone" type="tel" autocomplete="tel"></div>
           </div>
           <div><label for="ce">Email *</label><input id="ce" name="email" type="email" required autocomplete="email"></div>
           <div><label for="cm">Message *</label><textarea id="cm" name="message" required placeholder="Ask about a product, a quote or a repair"></textarea></div>
-          <button class="btn btn--primary" type="submit">Send message</button>
-          <p class="note">Sending opens your email app with your message ready to go.</p>
+          <p class="note"><strong>Email us</strong> opens your own email app (like Gmail or Outlook) with your message filled in. Nothing is sent until you press send there. Rather talk? Call us.</p>
+          <div class="actions">
+            <button class="btn btn--primary" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Email us</button>
+            <a class="btn btn--dark" href="tel:+61893755600"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1z"/></svg> Call us</a>
+          </div>
+          <p class="status" role="status" aria-live="polite"></p>
+          <div class="fallback" hidden>
+            <p><strong>Email app didn't open?</strong> Copy your message below and send it to <a href="mailto:sales@morleymowercentre.com.au">sales@morleymowercentre.com.au</a>, or call <a href="tel:+61893755600">(08) 9375 5600</a>.</p>
+            <label class="vh" for="contact-copy">Your message, ready to copy</label>
+            <textarea id="contact-copy" readonly></textarea>
+            <button class="btn btn--line copy-msg" type="button">Copy message</button>
+          </div>
         </form>
       </div>
     </section>
